@@ -31,10 +31,14 @@ Response:
 ]
 
 Request2: curl --location 'http://localhost:8080/jokes?count=0'
+
 Response: 
+
 Count must be between 1 and 100
 
 Request3: curl --location 'http://localhost:8080/jokes?count=150'
+
 Response: 
+
 Count must be between 1 and 100
 
