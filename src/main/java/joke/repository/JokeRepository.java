@@ -1,10 +1,8 @@
 package joke.repository;
 
-import java.util.UUID;
-
-import org.springframework.data.repository.reactive.ReactiveCrudRepository;
+import org.springframework.data.jpa.repository.JpaRepository;
 
 import joke.model.Joke;
 
-public interface JokeRepository extends ReactiveCrudRepository<Joke, UUID> {
+public interface JokeRepository extends JpaRepository<Joke, Long> {
 }
