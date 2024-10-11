@@ -10,15 +10,15 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import joke.dto.JokeResponseDTO;
-import joke.service.JokeService;
+import joke.service.JokeServiceOld;
 
 @RestController
 @RequestMapping("/jokes")
 public class JokeController {
 
-	private final JokeService jokeService;
+	private final JokeServiceOld jokeService;
 
-    public JokeController(JokeService jokeService) {
+    public JokeController(JokeServiceOld jokeService) {
         this.jokeService = jokeService;
     }
     
